@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="301.0" prefWidth="398.0">
+            <children>
+                <Button fx:id="btnExit" layoutX="219.0" layoutY="211.0" mnemonicParsing="false" onAction="#onExiting" text="изход" />
+                <Rectangle fx:id="bottom" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="38.0" layoutX="67.0" layoutY="148.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                <Rectangle fx:id="mid" arcHeight="5.0" arcWidth="5.0" fill="#1fff27" height="38.0" layoutX="67.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                <Rectangle fx:id="up" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="67.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                <RadioButton fx:id="bulgaria" layoutX="283.0" layoutY="42.0" mnemonicParsing="false" onAction="#showBGFlag" prefHeight="17.0" prefWidth="102.0" selected="true" text="Bulgarian Flag" />
+                <RadioButton fx:id="russia" layoutX="283.0" layoutY="83.0" mnemonicParsing="false" onAction="#showRUFlag" prefHeight="17.0" prefWidth="102.0" text="Russian Flag" />
+                <RadioButton fx:id="japanese" layoutX="283.0" layoutY="121.0" mnemonicParsing="false" onAction="#showJPFlag" prefHeight="17.0" prefWidth="102.0" text="Japaneses Flag" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
