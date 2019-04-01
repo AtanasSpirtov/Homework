@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="364.0" prefWidth="453.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane fx:id="BMI1" prefHeight="397.0" prefWidth="486.0" GridPane.columnIndex="1">
+            <children>
+                <Label layoutX="30.0" layoutY="42.0" prefHeight="17.0" prefWidth="68.0" text="Височина" />
+                <TextField fx:id="heigth" layoutX="24.0" layoutY="59.0" prefHeight="25.0" prefWidth="78.0" />
+                <TextField fx:id="weight" layoutX="25.0" layoutY="118.0" prefHeight="25.0" prefWidth="78.0" />
+                <TextField fx:id="age" layoutX="24.0" layoutY="176.0" prefHeight="25.0" prefWidth="78.0" />
+                <Label layoutX="30.0" layoutY="101.0" prefHeight="17.0" prefWidth="68.0" text="Тегло" />
+                <Label layoutX="30.0" layoutY="159.0" text="Възраст" />
+                <Label layoutX="38.0" layoutY="226.0" text="Пол" />
+                <MenuButton fx:id="gender" layoutX="24.0" layoutY="243.0" mnemonicParsing="false" text="-избери-">
+                    <items>
+                        <MenuItem fx:id="male" mnemonicParsing="false" onAction="#isMale" text="Мъж" />
+                        <MenuItem fx:id="female" mnemonicParsing="false" onAction="#isFemale" text="Жена" />
+                    </items>
+                </MenuButton>
+            <Button fx:id="calculate" layoutX="34.0" layoutY="296.0" mnemonicParsing="false" onAction="#onCalculate" text="Изчисли" />
+            <TextField fx:id="BMI" layoutX="24.0" layoutY="325.0" prefHeight="25.0" prefWidth="82.0" />
+            <TextField fx:id="perfectWeight" layoutX="163.0" layoutY="147.0" />
+            <Label layoutX="178.0" layoutY="122.0" text="Перфекто тегло" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
